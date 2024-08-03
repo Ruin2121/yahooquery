@@ -4,7 +4,7 @@ requires-python = ">=3.9"
 
 [tool.poetry]
 name = "yahooquery"
-version = "2.3.7r8"
+version = "2.3.7r9"
 description = "Python wrapper for an unofficial Yahoo Finance API"
 authors = ["Doug Guthrie <douglas.p.guthrie@gmail.com>"]
 documentation = "https://yahooquery.dpguthrie.com"
