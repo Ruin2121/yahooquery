@@ -50,13 +50,13 @@ Python 3.9+
 For standard installation:
 
 ```bash
-pip install "yahooquery @ git+https://github.com/Ruin2121/yahooquery.git@2.3.7r9"
+pip install "yahooquery @ git+https://github.com/Ruin2121/yahooquery.git@2.3.7r10"
 ```
 
 If you're a Yahoo Finance premium subscriber and would like to retrieve data available through your subscription, do the following:
 
 ```bash
-pip install "yahooquery[premium] @ git+https://github.com/Ruin2121/yahooquery.git@2.3.7r9"
+pip install "yahooquery[premium] @ git+https://github.com/Ruin2121/yahooquery.git@2.3.7r10"
 ```
 
 ## Example
