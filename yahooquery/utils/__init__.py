@@ -1366,7 +1366,7 @@ def initialize_session(session=None, **kwargs):
     return session
 
 
-def setup_session(session: requests.Session, url: str = None):
+def setup_session(session: requests.Session, url: str | None = None):
     url = url or DEFAULT_SESSION_URL
     try:
         response = session.get(url, allow_redirects=True)
