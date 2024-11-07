@@ -22,6 +22,7 @@ tqdm = "*"
 lxml = "*"
 selenium = {version = "*", optional = true}
 beautifulsoup4 = "*"
+ua-generator = "^1.0.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
