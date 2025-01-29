@@ -1,7 +1,7 @@
 """Python interface to unofficial Yahoo Finance API endpoints"""
 
 name = "yahooquery"
-__version__ = "2.3.7r10"
+__version__ = "2.3.7r11"
 
 from .misc import (  # noqa
     get_currencies,

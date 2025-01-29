@@ -1,29 +1,34 @@
 [project]
-requires-python = ">=3.9"
-
-
-[tool.poetry]
 name = "yahooquery"
-version = "2.3.7r10"
+version = "2.3.7r11"
 description = "Python wrapper for an unofficial Yahoo Finance API"
-authors = ["Doug Guthrie <douglas.p.guthrie@gmail.com>"]
-documentation = "https://yahooquery.dpguthrie.com"
-keywords = ["python", "API", "finance", "stocks", "Yahoo Finance"]
 license = "MIT"
 readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Doug Guthrie", email = "douglas.p.guthrie@gmail.com" }
+]
+maintainers = [
+    { name = "Christopher (Ruin21)", email = "118554907+Ruin2121@users.noreply.github.com"}
+]
+keywords = ["python", "API", "finance", "stocks", "Yahoo Finance"]
+dependencies = [
+    "requests (>=2.32.0)",
+    "urllib3 (>=2.2.2)",
+    "pandas",
+    "requests-futures",
+    "tqdm",
+    "lxml",
+    "beautifulsoup4"
+]
 
-[tool.poetry.dependencies]
-python = "^3.9.0"
-requests = ">=2.32.0"
-urllib3 = ">=2.2.2"
-pandas = "*"
-requests-futures = "*"
-tqdm = "*"
-lxml = "*"
-selenium = {version = "*", optional = true}
-beautifulsoup4 = "*"
+[project.urls]
+documentation = "https://yahooquery.dpguthrie.com"
 
-[tool.poetry.dev-dependencies]
+[project.optional-dependencies]
+premium = ["selenium"]
+
+[tool.poetry.group.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
 pre-commit = "*"
@@ -33,6 +38,3 @@ ruff = "*"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.extras]
-premium = ["selenium"]
